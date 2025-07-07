@@ -22,3 +22,4 @@ This is a simple yet modern **To-Do List Web Application** developed as part of 
 - **JavaScript (ES6+)**
 - **LocalStorage API**
 
+![image](https://github.com/user-attachments/assets/9a20d715-412c-40d5-a4a8-e9190d830c75)
