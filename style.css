@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+button {
+  padding: 10px 14px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background-color: #00ffae;
+  color: #003f5c;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #00e29c;
+}
+
+ul {
+  list-style: none;
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+li {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 10px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.actions button {
+  margin-left: 5px;
+  font-size: 14px;
+  padding: 5px 8px;
+  background-color: #ffffff99;
+  color: #003f5c;
+}
+
+.actions button:hover {
+  background-color: #fff;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* Scrollbar for task list */
+ul::-webkit-scrollbar {
+  width: 6px;
+}
+ul::-webkit-scrollbar-thumb {
+  background-color: #ffffff66;
+  border-radius: 10px;
+}
